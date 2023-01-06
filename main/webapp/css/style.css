@@ -1,0 +1,109 @@
+.dash-items {
+  margin: 5px;
+  padding-top: 10px;
+  height: 120px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+  transition: all 0.2s ease-in-out;
+}
+.dash-items:hover {
+  transform: scale(1.05);
+}
+.dash-items .total-value {
+  font-size: 1.4em;
+  margin: 0;
+}
+.list-group-item-action:hover {
+  color: white;
+  background-color: #0275d8;
+}
+
+#total-members {
+  background-color: rgba(2, 117, 216, 1);
+  background: linear-gradient(
+    135deg,
+    rgb(43, 121, 194) 0%,
+    rgb(21, 91, 151) 100%
+  );
+}
+#total-books {
+  background-color: rgb(34, 167, 34);
+  background: linear-gradient(
+    135deg,
+    rgb(26, 197, 41) 0%,
+    rgb(21, 136, 21) 100%
+  );
+}
+
+#total-pending {
+  background-color: rgb(214, 53, 53);
+  background: linear-gradient(
+    135deg,
+    rgb(214, 53, 53) 0%,
+    rgb(170, 37, 37) 100%
+  );
+}
+/* #total-members {
+  background-color: white;
+  border-color: rgb(2, 117, 216);
+  color: rgb(2, 117, 216);
+}
+#total-books {
+  border-color: rgb(34, 167, 34);
+  color: rgb(34, 167, 34);
+}
+
+#total-pending {
+  background-color: white;
+  border-color: rgb(202, 115, 43);
+  color: rgb(202, 115, 43);
+} */
+.mobile-sidebar {
+  display: none;
+}
+#newBookModal .col-sm-5 {
+  padding: 0;
+  vertical-align: middle;
+  text-align: center;
+}
+
+@media screen and (max-width: 575.98px) {
+  #sticky-sidebar {
+    display: none;
+  }
+  .dash-items {
+    margin: 5px;
+    height: 60px;
+    font-size: small;
+    padding-top: 5px;
+  }
+  .dash-items p {
+    margin: 0;
+  }
+  .mobile-sidebar {
+    display: block;
+    margin: auto 10px;
+    text-align: center;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  .mobile-sidebar .dropdown {
+    display: inline-block;
+    margin: 5px;
+  }
+  #frame {
+    margin-top: 20px;
+    height: 500px;
+  }
+  #newBookModal .col-sm-5 {
+    display: inline-block;
+    width: 50%;
+  }
+  #collapsibleNavbar #profile-icon {
+    display: none;
+  }
+}
